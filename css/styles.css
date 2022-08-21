@@ -198,11 +198,20 @@ img {
 /* Герой */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--third-bg-color);
+  background-color: #c4c4c4;
   text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -220,7 +229,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero.button {
+.hero .button {
   padding: 10px 32px;
 
   color: var(--primary-bg-color);
@@ -233,8 +242,8 @@ img {
   letter-spacing: 0.06em;
 }
 
-.hero.button:hover,
-.hero.button:focus {
+.hero .button:hover,
+.hero .button:focus {
   background-color: var(--hero-buttom-active);
 }
 
@@ -290,6 +299,9 @@ img {
 
   background-color: var(--primary-bg-color);
   border-radius: 0 0 4px 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-item-box {
@@ -344,6 +356,8 @@ img {
 .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Перелік робіт */
@@ -358,6 +372,12 @@ img {
   flex-basis: calc((100% - (2 * var(--margin-items))) / 3);
 
   background-color: #ffffff;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-box {

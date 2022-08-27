@@ -153,6 +153,8 @@ img {
 }
 
 .com-link .link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -163,10 +165,30 @@ img {
   letter-spacing: 0.02em;
 }
 
+.com-link-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.com-link-icon.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.com-link-icon.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 .com-link .link:hover,
 .com-link .link:focus {
   color: var(--accent-color);
 }
+
+.com-link .link:hover .com-link-icon,
+.com-link .link:focus .com-link-icon {
+  fill: var(--accent-color);
+}
+
 
 /* Заголовки */
 

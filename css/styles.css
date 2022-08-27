@@ -27,15 +27,6 @@
   --margin-items: 30px;
 }
 
-body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 h1,
 h2,
 h3,
@@ -55,6 +46,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -369,12 +369,17 @@ img {
   column-gap: 10px;
 }
 
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -402,13 +407,19 @@ img {
 }
 
 .customers-list-item {
-  display: flex;
+  min-width: 170px;
+  min-height: 92px;
 }
 
 .customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 1px solid var(--default-icon-color);
   border-radius: 4px;
-  padding: 15px 31px;
+  width: 100%;
+  height: 100%;
 }
 
 .customers-icon {
@@ -479,8 +490,12 @@ img {
   background-color: var(--primary-bg-color);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item > .link {
+  display: block;
+}
+
+.portfolio-item > .link:hover,
+.portfolio-item > .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -503,6 +518,7 @@ img {
 }
 
 .portfolio-list p {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -528,6 +544,7 @@ img {
 
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 
 /* Адреса */
@@ -561,7 +578,6 @@ img {
 
 .join {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .join-title {

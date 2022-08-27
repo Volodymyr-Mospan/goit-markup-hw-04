@@ -221,7 +221,6 @@ body {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -283,9 +282,10 @@ body {
 
 .features-box {
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - (3 * var(--margin-items))) / 4);
-  padding: 25px 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: var(--margin-items);
 
   background-color: var(--second-bg-color);
@@ -407,7 +407,7 @@ body {
 }
 
 .customers-list-item {
-  min-width: 170px;
+  flex-basis: calc((100% - (3 * var(--margin-items))) / 4);
   min-height: 92px;
 }
 

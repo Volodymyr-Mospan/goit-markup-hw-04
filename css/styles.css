@@ -189,7 +189,6 @@ img {
   fill: var(--accent-color);
 }
 
-
 /* Заголовки */
 
 .title {
@@ -279,6 +278,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--margin-items);
+}
+
+.features-box {
+  display: flex;
+  align-items: center;
+  flex-basis: calc((100% - (3 * var(--margin-items))) / 4);
+  padding: 25px 100px;
+  margin-bottom: var(--margin-items);
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
 }
 
 .features-item {
